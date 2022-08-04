@@ -1,0 +1,63 @@
+@import url(reset.css);
+
+body {
+	background-color: #e8e8e8;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-bottom: 200px;
+}
+
+.inner {
+	max-width: 842px;
+	margin: 0 auto;
+}
+
+.top-text {
+	color: #273d46;
+	font-size: 14px;
+	font-family: Arial;
+	opacity: 60%;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 168px;
+	letter-spacing: 2px;
+	margin-bottom: 28px;
+}
+
+.title {
+	color: #273d46;
+	font-size: 36px;
+	text-align: center;
+	padding: 0 55px;
+	font-family: "Times New Roman";
+	line-height: 50px;
+	margin-bottom: 75px;
+}
+
+.image {
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0px 15px 35px rgba(15, 16, 16, 15%);
+	height: 500px;
+	position: relative;
+}
+
+.image::after {
+	content: '';
+	position: absolute;
+	width: 1186px;
+	height: 1075px;
+	left: -135px;
+	top: -259px;
+	background: url(../img/line.svg) top center/cover no-repeat;
+	z-index: -1;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
